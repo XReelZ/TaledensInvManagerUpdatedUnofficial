@@ -36,6 +36,7 @@ namespace Scripts.TIM
     Since this script is minimised to reduce size and get round PB limits, you won't be able
     to edit this script directly. To view the source code, and possibly give contributions,
     please head to https://github.com/Gorea235/TaledensInvManagerUpdated
+    https://github.com/XReelZ/TaledensInvManagerUpdatedUnofficial
 
     *******************
     BASIC CONFIGURATION
@@ -83,10 +84,16 @@ namespace Scripts.TIM
     // the game, some from the community workshop).      
     //NATO_5p56x45mm,,,,NATO_5p56x45mmMagazine    - deprecated after patch 1.980
     const string DEFAULT_ITEMS = @"
-                                    
                                     AmmoMagazine/
                                     /Missile200mm
-                                    /NATO_25x184mm,,,,NATO_25x184mmMagazine
+                                    /NATO_25x184mm,,,,NATO_25x184mmMagazine  
+                                    /AutomaticRifleGun_Mag_20rd,,,,
+                                    /ElitePistolMagazine,,,,
+                                    /FullAutoPistolMagazine,,,,
+                                    /PreciseAutomaticRifleGun_Mag_5rd,,,,
+                                    /RapidFireAutomaticRifleGun_Mag_50rd,,,,
+                                    /SemiAutoPistolMagazine,,,,
+                                    /UltimateAutomaticRifleGun_Mag_30rd,,,,
 
                                     Component/
                                     /BulletproofGlass,50,2%
@@ -110,8 +117,7 @@ namespace Scripts.TIM
                                     /SteelPlate,150,40%
                                     /Superconductor,10,1%
                                     /Thrust,15,5%,,ThrustComponent
-                                    /Canvas,5,0.01%   
-                                    /ShieldComponent,15,5%,,ShieldComponentBP
+                                    /Canvas,5,0.01%
 
                                     GasContainerObject/
                                     /HydrogenBottle
@@ -154,11 +160,12 @@ namespace Scripts.TIM
                                     /HandDrillItem,,,,HandDrill
                                     /HandDrill2Item,,,,HandDrill2
                                     /HandDrill3Item,,,,HandDrill3
-                                    /HandDrill4Item,,,,HandDrill4
-                                    /BasicHandHeldLauncherItem,0,0%,,BasicHandHeldLauncher
-                                    /ElitePistolItem,0,0%,,EliteAutoPistol
-                                    /FullAutoPistolItem,0,0%,,FullAutoPistol
-                                    /SemiAutoPistolItem,,,,SemiAutoPistol
+                                    /HandDrill4Item,,,,HandDrill4     
+                                    /SemiAutoPistolItem,,,,SemiAutoPistol  
+                                    /BasicHandHeldLauncherItem,,,,BasicHandHeldLauncher
+                                    /ElitePistolItem,,,,EliteAutoPistol
+                                    /FullAutoPistolItem,,,,FullAutoPistol
+                                    /AdvancedHandHeldLauncherItem,,,AdvancedHandHeldLauncher,AdvancedHandHeldLauncher
                                     /PreciseAutomaticRifleItem,,,PreciseAutomaticRifle,PreciseAutomaticRifle
                                     /RapidFireAutomaticRifleItem,,,RapidFireAutomaticRifle,RapidFireAutomaticRifle
                                     /UltimateAutomaticRifleItem,,,UltimateAutomaticRifle,UltimateAutomaticRifle
@@ -2173,7 +2180,7 @@ namespace Scripts.TIM
         {
           found++;
           itype = "INGOT";
-          isub = "STONE";
+          isub = "STONE"; 
         }
       }
       else
