@@ -2180,7 +2180,7 @@ namespace Scripts.TIM
         {
           found++;
           itype = "INGOT";
-          isub = "STONE"; 
+          isub = "STONE";
         }
       }
       else
