@@ -118,9 +118,14 @@ namespace Scripts.TIM
                                     /Superconductor,10,1%
                                     /Thrust,15,5%,,ThrustComponent
                                     /Canvas,5,0.01%
+                                    /ArcFuel,0,0%
+                                    /DenseSteelPlate,0,0%
+                                    /ArcReactorcomponent,0,0%
+                                    
 
                                     GasContainerObject/
                                     /HydrogenBottle
+
 
                                     Ingot/
                                     /Cobalt,50,3.5%
