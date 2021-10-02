@@ -190,14 +190,13 @@ namespace Scripts.TIM
             // vanilla products
             { "ICE", "" }, { "ORGANIC", "" }, { "SCRAP", "IRON" },
 
-            // better stone products
-            // http://steamcommunity.com/sharedfiles/filedetails/?id=406244471
-            {"DENSE IRON", "IRON"}, {"ICY IRON", "IRON"}, {"HEAZLEWOODITE", "NICKEL"}, {"CATTIERITE", "COBALT"}, {"PYRITE", "GOLD"},
-            {"TAENITE", "NICKEL"}, {"COHENITE", "COBALT"}, {"KAMACITE", "NICKEL"}, {"GLAUCODOT", "COBALT"}, {"ELECTRUM", "GOLD"},
-            {"PORPHYRY", "GOLD"}, {"SPERRYLITE", "PLATINUM"}, {"NIGGLIITE", "PLATINUM"}, {"GALENA", "SILVER"}, {"CHLORARGYRITE", "SILVER"},
-            {"COOPERITE", "PLATINUM"}, {"PETZITE", "SILVER"}, {"HAPKEITE", "SILICON"}, {"DOLOMITE", "MAGNESIUM"}, {"SINOITE", "SILICON"},
-            {"OLIVINE", "MAGNESIUM"}, {"QUARTZ", "SILICON"}, {"AKIMOTOITE", "MAGNESIUM"}, {"WADSLEYITE", "MAGNESIUM"}, {"CARNOTITE", "URANIUM"},
-            {"AUTUNITE", "URANIUM"}, {"URANIAURITE", "GOLD"}
+            // better stone products - updated for v7.0.1+
+            {"[CM] DENSE IRON (FE+)", "IRON"}, {"[CM] IRON (FE)", "IRON"}, {"[CM] HEAZLEWOODITE (NI)", "NICKEL"}, {"[CM] CATTIERITE (CO)", "COBALT"}, {"[CM] PYRITE (FE,AU)", "GOLD"},
+            {"[CM] TAENITE (FE,NI)", "NICKEL"}, {"[CM] COHENITE (NI,CO)", "COBALT"}, {"[CM] KAMACITE (FE,NI,CO)", "NICKEL"}, {"[CM] GLAUCODOT (FE,CO)", "COBALT"}, {"[PM] ELECTRUM (AU,AG)", "GOLD"},
+            {"[PM] PORPHYRY (AU)", "GOLD"}, {"[PM] SPERRYLITE (PT)", "PLATINUM"}, {"[PM] NIGGLIITE (PT)", "PLATINUM"}, {"[PM] GALENA (AG)", "SILVER"}, {"[PM] CHLORARGYRITE (AG)", "SILVER"},
+            {"[PM] COOPERITE (NI,PT)", "PLATINUM"}, {"[PM] PETZITE (AG,AU)", "SILVER"}, {"[S] HAPKEITE (FE,SI)", "SILICON"}, {"[S] DOLOMITE (MG)", "MAGNESIUM"}, {"[S] SINOITE (SI)", "SILICON"},
+            {"[S] OLIVINE (SI,MG)", "MAGNESIUM"}, {"[S] QUARTZ (SI)", "SILICON"}, {"[S] AKIMOTOITE (SI,MG)", "MAGNESIUM"}, {"[S] WADSLEYITE (SI,MG)", "MAGNESIUM"}, {"[EI] CARNOTITE (U)", "URANIUM"},
+            {"[EI] AUTUNITE (U)", "URANIUM"}, {"[EI] URANIAURITE (U,AU)", "GOLD"}, {"[S] ICY STONE", "STONE"}
         };
 
     // Block types/subtypes which restrict item types/subtypes from their first
