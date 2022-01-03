@@ -118,9 +118,6 @@ namespace Scripts.TIM
                                     /Superconductor,10,1%
                                     /Thrust,15,5%,,ThrustComponent
                                     /Canvas,5,0.01%
-                                    /ArcFuel,0,0%
-                                    /DenseSteelPlate,0,0%
-                                    /ArcReactorcomponent,0,0%
                                     
 
                                     GasContainerObject/
@@ -2972,7 +2969,15 @@ namespace Scripts.TIM
             data = typeSubData[item.type][item.subType];
             speed = data.prdSpeed.TryGetValue("" + asm.BlockDefinition, out speed) ? speed : 1.0;
             amount = Math.Max((int)(10 * speed), 10);
-            asm.AddQueueItem(data.blueprint, (double)amount);
+            try
+            {
+              asm.AddQueueItem(data.blueprint, (double)amount);
+            }
+            catch (Exception)
+            {
+              debugText.Add("Error adding item in queue: "+data.blueprint.ToString());
+            }
+            //
             itemLevel[item] += (int)Math.Ceiling(1e8 * amount / data.quota);
             if (debug) debugText.Add("  " + asm.CustomName + " assigned " + amount + "x " + subLabel[item.subType] + " (L=" + itemLevel[item] + "%)");
           }
