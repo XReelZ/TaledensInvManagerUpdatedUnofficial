@@ -94,6 +94,11 @@ namespace Scripts.TIM
                                     /RapidFireAutomaticRifleGun_Mag_50rd,,,,
                                     /SemiAutoPistolMagazine,,,,
                                     /UltimateAutomaticRifleGun_Mag_30rd,,,,
+                                    /LargeCalibreAmmo,,,,
+                                    /MediumCalibreAmmo,,,,
+                                    /AutocannonClip,,,,
+                                    /LargeRailgunAmmo,,,,
+                                    /SmallRailgunAmmo,,,,                                    
 
                                     Component/
                                     /BulletproofGlass,50,2%
@@ -125,7 +130,7 @@ namespace Scripts.TIM
 
 
                                     Ingot/
-                                    /Cobalt,50,3.5%
+                                    /Cobalt,73.33,3.5%
                                     /Gold,5,0.2%
                                     /Iron,200,88%
                                     /Magnesium,5,0.1%
