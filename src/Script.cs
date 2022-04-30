@@ -234,11 +234,11 @@ namespace Scripts.TIM
     #region Version
 
     // current script version
-    const int VERSION_MAJOR = 1, VERSION_MINOR = 7, VERSION_REVISION = 7;
+    const int VERSION_MAJOR = 1, VERSION_MINOR = 7, VERSION_REVISION = 8;
     /// <summary>
     /// Current script update time.
     /// </summary>
-    const string VERSION_UPDATE = "2019-04-07";
+    const string VERSION_UPDATE = "2022-04-30";
     /// <summary>
     /// A formatted string of the script version.
     /// </summary>
