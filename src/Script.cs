@@ -2016,7 +2016,10 @@ namespace Scripts.TIM
                   (refineryOres.TryGetValue(blkRfn, out ores) ? ores : refineryOres[blkRfn] = new HashSet<string>()).UnionWith(autoores);
               }
               else if (blkAsm.Enabled)
+              {
                 (assemblerItems.TryGetValue(blkAsm, out items) ? items : assemblerItems[blkAsm] = new HashSet<ItemId>()).UnionWith(autoitems);
+                blkAsm.CooperativeMode = false;
+              }
               name.Append(" ");
             }
             else if (!ParseItemValueText(block, fields, "", out itype, out isub, out priority, out amount, out ratio, out force))
